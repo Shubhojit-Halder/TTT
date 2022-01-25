@@ -126,7 +126,7 @@ textarea {
 .my-msg{
     margin-left: 0.5rem;
     border-radius: 0.5rem;
-    text-align: justify;
+    /* text-align: justify; */
     box-sizing: border-box;
     width: 50%;
     overflow: hidden;
@@ -134,17 +134,18 @@ textarea {
     left: 50%;
     transform: translateX(-10%);
     background-color: #1e3799;
+    margin-bottom: 1rem;
 }
 
-.my-msg p{
+.my-msg div{
     background-color: #1e3799;
     margin-top: -2px;
     white-space: pre-line;
     overflow-wrap: break-word;
-    padding: 0 0.5rem ;
+    padding: 0 0.5rem 0.5rem;
     text-align: left;
     color: white;
-    width: 98%;
+    width: 96%;
 }
 .my-msg label{
     color: white;
@@ -154,6 +155,7 @@ textarea {
     margin-top: -3px;
 }
 .chat-screen {
+    /* box-sizing: border-box; */
     text-align: justify;
     position: relative;
     border-radius: 0.5rem;
@@ -164,4 +166,9 @@ textarea {
     grid-area: scrn;
     overflow: auto;
     /* max-height: ; */
+}
+.dum{
+    width: 100%;
+    height: 5px;
+
 }

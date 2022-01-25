@@ -39,17 +39,12 @@
         const input = document.querySelector("textarea");
         const scrn = document.querySelector(".chat-screen");
         function snd_msg() {
-            // var now = new Date();
-            // var mins = now.getMinutes();
-            // var hrs = now.getHours();
-            // var sec = now.getSeconds();
-            // hrs = (hrs < 10)?`0${hrs}`:hrs;
-            // mins = (mins < 10)?`0${mins}`:mins;
-            // sec = (sec < 10)?`0${sec}`:sec;
-            // @${hrs}:${mins}:${sec} 
+        
             if(input.value !== ''){
-                var mySide = document.createElement("span");
-                var myMsg = document.createElement("p");
+                var dummy = document.createElement("div");
+                dummy.classList.add("dum");
+                var mySide = document.createElement("div");
+                var myMsg = document.createElement("div");
                 const nameLabel = document.createElement("label");
                 var text = input.value;
                 nameLabel.innerHTML = "You ";
@@ -57,6 +52,7 @@
                 mySide.appendChild(nameLabel);
                 mySide.appendChild(myMsg);
                 scrn.appendChild(mySide);
+                scrn.appendChild(dummy);
                 mySide.classList.add("my-msg");
                 input.value = "";
             }
