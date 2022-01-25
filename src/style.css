@@ -5,11 +5,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .chat-screen::-webkit-scrollbar {
     display: none;
 }
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
     display: none;
 }
 
@@ -33,7 +32,7 @@ textarea::-webkit-scrollbar{
 
 .posn {
     background-color: white;
-    border: 0.7rem solid #0dcf9c;
+    border: 0.7rem solid #3d3da1;
     height: 100%;
     width: 100%;
 }
@@ -117,7 +116,7 @@ textarea {
     border-radius: 0.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-color: #5f27cd;
+    background-color: #ff3838;
     color: white;
 }
 
@@ -128,13 +127,9 @@ textarea {
 .my-msg {
     margin-left: 0.5rem;
     border-radius: 0.5rem;
-    /* text-align: justify; */
     box-sizing: border-box;
     width: 75%;
-    /* position: absolute; */
     float: right;
-    /* left: 50%; */
-    /* transform: translateX(-10%); */
     background-color: #4b7bec;
     margin-bottom: 1rem;
     border-bottom: 7px white;
@@ -161,16 +156,14 @@ textarea {
     margin-left: 8px;
     margin-top: -3px;
 }
+
 .oth-msg {
     margin-left: 0.1rem;
     border-radius: 0.5rem;
     text-align: justify;
     box-sizing: border-box;
     width: 75%;
-    /* position: absolute; */
     float: left;
-    /* left: 50%; */
-    /* transform: translateX(-10%); */
     background-color: #20bf6b;
     margin-bottom: 1rem;
     border-bottom: 7px white;
@@ -200,21 +193,21 @@ textarea {
 }
 
 .chat-screen {
+    max-height: 400px;
     box-sizing: border-box;
     text-align: justify;
     position: relative;
     border-radius: 0.5rem;
     margin: 1rem;
-    /* padding: 1rem; */
     max-height: 65%;
     background-color: white;
     grid-area: scrn;
     overflow: auto;
     border: 13px solid white;
-    /* max-height: ; */
 }
 
-.my-msg span,.oth-msg span{
+.my-msg span,
+.oth-msg span {
     color: white;
     font-size: 9px;
     float: right;
@@ -222,8 +215,11 @@ textarea {
     position: relative;
     bottom: 0.1rem;
     word-spacing: 2px;
-} 
-.my-msg div,.oth-msg div{
+}
+
+.my-msg div,
+.oth-msg div {
     font-size: 13.5px;
     padding-top: 0.3rem;
+    text-align: justify ;
 }
