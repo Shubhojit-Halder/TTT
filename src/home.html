@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="res" class="boxes">
+
+        </div>
+        <div id="box" class="boxes">
+            <div id="div1" class="posn top left"></div>
+            <div id="div2" class="posn top"></div>
+            <div id="div3" class="posn top right"></div>
+            <div id="div4" class="posn left"></div>
+            <div id="div5" class="posn"></div>
+            <div id="div6" class="posn right"></div>
+            <div id="div7" class="posn bot left"></div>
+            <div id="div8" class="posn bot"></div>
+            <div id="div9" class="posn bot right"></div>
+        </div>
+        <div id="chat" class="boxes">
+            <div class="chat-screen">
+            </div>
+            <div class="txtarea">
+                <textarea name="message" placeholder="Enter message" id="msg-box" cols="30" rows="2"></textarea>
+                <button id="send-chat" onclick="snd_msg()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const input = document.querySelector("textarea");
+        const scrn = document.querySelector(".chat-screen");
+        function snd_msg() {
+            // var now = new Date();
+            // var mins = now.getMinutes();
+            // var hrs = now.getHours();
+            // var sec = now.getSeconds();
+            // hrs = (hrs < 10)?`0${hrs}`:hrs;
+            // mins = (mins < 10)?`0${mins}`:mins;
+            // sec = (sec < 10)?`0${sec}`:sec;
+            // @${hrs}:${mins}:${sec} 
+            if(input.value !== ''){
+                var mySide = document.createElement("span");
+                var myMsg = document.createElement("p");
+                const nameLabel = document.createElement("label");
+                var text = input.value;
+                nameLabel.innerHTML = "You ";
+                myMsg.innerHTML = text;
+                mySide.appendChild(nameLabel);
+                mySide.appendChild(myMsg);
+                scrn.appendChild(mySide);
+                mySide.classList.add("my-msg");
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
