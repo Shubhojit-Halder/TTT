@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 
 body {
     margin: 0;
@@ -151,6 +151,7 @@ textarea {
     text-align: left;
     color: white;
     width: 90%;
+    font-family: 'Epilogue', sans-serif;
 }
 
 .my-msg label {
@@ -163,14 +164,14 @@ textarea {
 .oth-msg {
     margin-left: 0.1rem;
     border-radius: 0.5rem;
-    /* text-align: justify; */
+    text-align: justify;
     box-sizing: border-box;
     width: 75%;
     /* position: absolute; */
     float: left;
     /* left: 50%; */
     /* transform: translateX(-10%); */
-    background-color: #26de81;
+    background-color: #20bf6b;
     margin-bottom: 1rem;
     border-bottom: 7px white;
     overflow: auto;
@@ -178,7 +179,7 @@ textarea {
 
 .oth-msg div {
     overflow: auto;
-    background-color: #26de81;
+    background-color: #20bf6b;
     margin-top: -2px;
     white-space: pre-line;
     overflow-wrap: break-word;
@@ -186,6 +187,8 @@ textarea {
     text-align: left;
     color: white;
     width: 90%;
+    font-size: 16px;
+    font-family: 'Epilogue', sans-serif;
 }
 
 .oth-msg label {
@@ -211,7 +214,16 @@ textarea {
     /* max-height: ; */
 }
 
-/* .dum{
-    width: 100%;
-    height: 25px;
-} */
+.my-msg span,.oth-msg span{
+    color: white;
+    font-size: 9px;
+    float: right;
+    padding-right: 0.6rem;
+    position: relative;
+    bottom: 0.1rem;
+    word-spacing: 2px;
+} 
+.my-msg div,.oth-msg div{
+    font-size: 13.5px;
+    padding-top: 0.3rem;
+}

@@ -51,6 +51,18 @@
                 myMsg.innerHTML = text;
                 mySide.appendChild(nameLabel);
                 mySide.appendChild(myMsg);
+                var now = new Date();
+                var sec = now.getSeconds();
+                sec = (sec < 10)?`0${sec}`:sec;
+                var min = now.getMinutes();
+                min = (min < 10)?`0${min}`:min;
+                var hrs = now.getHours();
+                var meridian = (hrs > 12)?"pm":"am";
+                hrs = (hrs < 10)?`0${hrs}`:hrs;
+                hrs = (hrs > 12)?hrs -12:hrs;
+                var hora = document.createElement("span");
+                hora.innerHTML = `${hrs}:${min} ${meridian}`;
+                mySide.appendChild(hora);
                 scrn.appendChild(mySide);
             }
         }
@@ -69,6 +81,18 @@
                 myMsg.innerHTML = text;
                 mySide.appendChild(nameLabel);
                 mySide.appendChild(myMsg);
+                var now = new Date();
+                var sec = now.getSeconds();
+                sec = (sec < 10)?`0${sec}`:sec;
+                var min = now.getMinutes();
+                min = (min < 10)?`0${min}`:min;
+                var hrs = now.getHours();
+                var meridian = (hrs > 12)?"pm":"am";
+                hrs = (hrs < 10)?`0${hrs}`:hrs;
+                hrs = (hrs > 12)?hrs -12:hrs;
+                var hora = document.createElement("span");
+                hora.innerHTML = `${hrs}:${min} ${meridian}`;
+                mySide.appendChild(hora);
                 scrn.appendChild(mySide);
             }
         }
