@@ -1,14 +1,14 @@
 var newArr = [
-    { msg: "Hexapacifer is a guy with no talents trying to fit in amongst talented people.", msg_sym: "X" },
-    { msg: "Hexapacifer is a dumbass.", msg_sym: "O" },
-    { msg: "Hexapacifer is worthless.", msg_sym: "X" },
-    { msg: "Hexapacifer just wants to have his own set of skills.", msg_sym: "O" },
-    { msg: "Hexapacifer will never be able to achieve his goals.", msg_sym: "X" },
-    { msg: "People look at him as if he's just a loser.", msg_sym: "O" },
-    { msg: "People pity him.", msg_sym: "X" },
-    { msg: "People don't value him and never will.", msg_sym: "O" },
-    { msg: "Some people find it amusing when he fails.", msg_sym: "X" },
-    { msg: "Hexapacifer is weak.", msg_sym: "O" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "X" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "O" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "X" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "O" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "X" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "O" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "X" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "O" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "X" },
+    { msg: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, neque.", msg_sym: "O" },
 
 ];
 
@@ -28,7 +28,7 @@ function chat(msg, msg_sym) {
         nameLabel.innerHTML = "You ";
     }
     else {
-        nameLabel.innerHTML = "Some other skilled guy";
+        nameLabel.innerHTML = "Lorem";
         mySide.classList.add("oth-msg");
     }
     myMsg.innerHTML = text;
