@@ -6,8 +6,22 @@ body {
     padding: 0;
 }
 .chat-screen::-webkit-scrollbar {
-    display: none;
+    width: 0.5rem;
 }
+.chat-screen::-webkit-scrollbar-thumb{
+    background-color: #ec3b3be7;
+    width: 0.5rem #d61f1fab;
+    border: 0.25rem ;
+    border-radius: 100vh;
+}
+.chat-screen::-webkit-scrollbar-track{
+    border-radius: 100vh;
+    background-color: rgba(211, 211, 211, 0.89);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
 textarea::-webkit-scrollbar {
     display: none;
 }
@@ -199,11 +213,13 @@ textarea {
     position: relative;
     border-radius: 0.5rem;
     margin: 1rem;
+    padding-inline: 5px;
     max-height: 65%;
     background-color: white;
     grid-area: scrn;
     overflow: auto;
     border: 13px solid white;
+    border-right: 7px solid white;
 }
 
 .my-msg span,

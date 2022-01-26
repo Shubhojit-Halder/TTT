@@ -1,25 +1,27 @@
 var newArr = [
-    { msg: "Aryadeep is a guy with no talents trying to fit in amongst talented people", msg_sym: "X" },
-    { msg: "Aryadeep is a dumbass", msg_sym: "O" },
-    { msg: "Aryadeep is worthless", msg_sym: "X" },
-    { msg: "Aryadeep just wants to have his own set of skills", msg_sym: "O" },
-    { msg: "Aryadeep will never be able to achieve his goals", msg_sym: "X" },
-    { msg: "People look at him as if he's just a loser", msg_sym: "O" },
-    { msg: "Few people pity him", msg_sym: "X" },
-    { msg: "People don't value him and never will", msg_sym: "O" },
-    { msg: "Some people find it amusing when he fails", msg_sym: "X" },
-    { msg: "Aryadeep in weak", msg_sym: "O" },
+    { msg: "Hexapacifer is a guy with no talents trying to fit in amongst talented people.", msg_sym: "X" },
+    { msg: "Hexapacifer is a dumbass.", msg_sym: "O" },
+    { msg: "Hexapacifer is worthless.", msg_sym: "X" },
+    { msg: "Hexapacifer just wants to have his own set of skills.", msg_sym: "O" },
+    { msg: "Hexapacifer will never be able to achieve his goals.", msg_sym: "X" },
+    { msg: "People look at him as if he's just a loser.", msg_sym: "O" },
+    { msg: "People pity him.", msg_sym: "X" },
+    { msg: "People don't value him and never will.", msg_sym: "O" },
+    { msg: "Some people find it amusing when he fails.", msg_sym: "X" },
+    { msg: "Hexapacifer is weak.", msg_sym: "O" },
 
 ];
 
 function chat(msg, msg_sym) {
     let scrn = document.querySelector(".chat-screen");
-    var time = new Date();
-    console.log(time.toTimeString());
+    var time = new Date();  
     var jikan = time.toLocaleTimeString();
+    // console.log(time.toTimeString());
     var mySide = document.createElement("div");
     var myMsg = document.createElement("div");
-    const nameLabel = document.createElement("label");
+    var nameLabel = document.createElement("label");
+    var hora = document.createElement("span");
+
     var text = msg;
     if (msg_sym == "X") {
         mySide.classList.add("my-msg");
@@ -32,6 +34,9 @@ function chat(msg, msg_sym) {
     myMsg.innerHTML = text;
     mySide.appendChild(nameLabel);
     mySide.appendChild(myMsg);
+    hora.innerHTML = jikan;
+    mySide.appendChild(hora);
+    scrn.appendChild(mySide);
     // var now = new Date();
     // var sec = now.getSeconds();
     // sec = (sec < 10) ? `0${sec}` : sec;
@@ -42,10 +47,6 @@ function chat(msg, msg_sym) {
     // hrs = (hrs < 10) ? `0${hrs}` : hrs;
     // hrs = (hrs > 12) ? hrs - 12 : hrs;
     // hora.innerHTML = `${hrs}:${min} ${meridian}`;
-    var hora = document.createElement("span");
-    hora.innerHTML = jikan;
-    mySide.appendChild(hora);
-    scrn.appendChild(mySide);
 }
 
 for (const i of newArr) {
