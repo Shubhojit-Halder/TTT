@@ -9,11 +9,13 @@ body {
     width: 0.5rem;
 }
 .chat-screen::-webkit-scrollbar-thumb{
-    background-color: #ec3b3be7;
-    width: 0.5rem #d61f1fab;
-    border: 0.25rem ;
+    background-color: #ec3b3bf1;
     border-radius: 100vh;
 }
+.chat-screen::-webkit-scrollbar-thumb:hover{
+    background-color: #ee1010;
+}
+
 .chat-screen::-webkit-scrollbar-track{
     border-radius: 100vh;
     background-color: rgba(211, 211, 211, 0.89);
@@ -21,7 +23,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
-
+@supports(scrollbar-color: #ec3b3bf1 rgba(211, 211, 211, 0.89)){
+    .chat-screen{
+        scrollbar-color: #ec3b3bf1 rgba(211, 211, 211, 0.89);
+        scrollbar-width: thin;
+    }
+}
 textarea::-webkit-scrollbar {
     display: none;
 }
